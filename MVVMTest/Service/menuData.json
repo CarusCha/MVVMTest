@@ -1,0 +1,16 @@
+{
+    "prouctList":[
+        {
+            "productName": "A menu",
+            "price": "10"
+        },
+        {
+            "productName": "B menu",
+            "price": "20"
+        },
+        {
+            "productName": "C menu",
+            "price": "30"
+        }
+    ]
+}

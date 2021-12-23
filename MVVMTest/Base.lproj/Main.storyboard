@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="ipad9_7" orientation="landscape" layout="fullscreen" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--MVCVC-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MVCVC" customModule="MVVMTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="9t8-Nc-6ju">
+                                <rect key="frame" x="0.0" y="20" width="1024" height="748"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="9t8-Nc-6ju" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="0Zh-3G-OKn"/>
+                            <constraint firstItem="9t8-Nc-6ju" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Wln-yW-Ve9"/>
+                            <constraint firstItem="9t8-Nc-6ju" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="cyx-mv-EFa"/>
+                            <constraint firstItem="9t8-Nc-6ju" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="ySa-88-280"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="9t8-Nc-6ju" id="Phj-gL-zpf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-98" y="101"/>
+        </scene>
+        <!--MVVMVC-->
+        <scene sceneID="raH-qH-Q7G">
+            <objects>
+                <viewController id="ICF-9r-kTl" customClass="MVVMVC" customModule="MVVMTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FQv-sk-SS6">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="6E8-K8-iQD">
+                                <rect key="frame" x="0.0" y="20" width="1024" height="748"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ucW-vJ-rsK"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6E8-K8-iQD" firstAttribute="top" secondItem="ucW-vJ-rsK" secondAttribute="top" id="PWk-do-XxN"/>
+                            <constraint firstItem="6E8-K8-iQD" firstAttribute="trailing" secondItem="ucW-vJ-rsK" secondAttribute="trailing" id="XBc-eD-TXQ"/>
+                            <constraint firstItem="6E8-K8-iQD" firstAttribute="leading" secondItem="ucW-vJ-rsK" secondAttribute="leading" id="aty-vb-tsT"/>
+                            <constraint firstItem="6E8-K8-iQD" firstAttribute="bottom" secondItem="ucW-vJ-rsK" secondAttribute="bottom" id="zPP-3C-6I3"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="6E8-K8-iQD" id="N9e-SS-ESm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OTr-F6-mQI" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="707" y="101"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
